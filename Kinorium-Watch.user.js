@@ -4,8 +4,8 @@
 // @author		Kirlovon/madonchik123
 // @description Watch films on ru.kinorium.com for free!
 // @icon		https://raw.githubusercontent.com/Kirlovon/Kinopoisk-Watch/gh-pages/assets/favicon.png
-// @updateURL    https://github.com/madonchik123/Kinorium-Watch/blob/main/Kinorium-Watch.user.js
-// @downloadURL  https://github.com/madonchik123/Kinorium-Watch/blob/main/Kinorium-Watch.user.js
+// @updateURL    https://github.com/madonchik123/Kinorium-Watch/raw/main/Kinorium-Watch.user.js
+// @downloadURL  https://github.com/madonchik123/Kinorium-Watch/raw/main/Kinorium-Watch.user.js
 // @version		1.0.0
 // @match		*://ru.kinorium.com/*
 // @grant		none
@@ -89,8 +89,16 @@ function updateBanner() {
 	if (isNumeric(movieId)) {
 		if (!banner) mountBanner();
 		const link = new URL(PLAYER_LINK);
+        const element = document.querySelector('.link-info-movie');
+        const element2 = document.querySelector('h1[itemprop="name"]');
+        console.log(element);
+        if (element !== null && element2 === null) {
+        link.searchParams.set('data', element.innerText);
+        document.getElementById(BANNER_ID).setAttribute('href', link.toString());
+        } else {
 		link.searchParams.set('data', document.querySelector('h1[itemprop="name"]').innerText);
 		document.getElementById(BANNER_ID).setAttribute('href', link.toString());
+        }
 	} else {
         if (banner) unmountBanner();
     }
