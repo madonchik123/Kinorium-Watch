@@ -2,7 +2,7 @@
 // @name		Kinorium Watch
 // @namespace	kinorium-watch
 // @author		Kirlovon
-// @description Watch films on Kinopoisk.ru for free!
+// @description Watch films on ru.kinorium.com for free!
 // @icon		https://raw.githubusercontent.com/Kirlovon/Kinopoisk-Watch/gh-pages/assets/favicon.png
 // @version		1.0.0
 // @match		*://ru.kinorium.com/*
