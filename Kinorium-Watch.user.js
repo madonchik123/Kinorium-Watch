@@ -6,7 +6,7 @@
 // @icon		https://raw.githubusercontent.com/Kirlovon/Kinopoisk-Watch/gh-pages/assets/favicon.png
 // @updateURL    https://github.com/madonchik123/Kinorium-Watch/raw/main/Kinorium-Watch.user.js
 // @downloadURL  https://github.com/madonchik123/Kinorium-Watch/raw/main/Kinorium-Watch.user.js
-// @version		1.0.5
+// @version		1.0.2
 // @match		*://ru.kinorium.com/*
 // @grant		none
 // @run-at		document-end
