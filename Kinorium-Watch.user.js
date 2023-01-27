@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name		Kinorium Watch
 // @namespace	kinorium-watch
-// @author		Kirlovon
+// @author		Kirlovon/madonchik123
 // @description Watch films on ru.kinorium.com for free!
 // @icon		https://raw.githubusercontent.com/Kirlovon/Kinopoisk-Watch/gh-pages/assets/favicon.png
+// @updateURL    https://github.com/madonchik123/Kinorium-Watch/blob/main/Kinorium-Watch.user.js
+// @downloadURL  https://github.com/madonchik123/Kinorium-Watch/blob/main/Kinorium-Watch.user.js
 // @version		1.0.0
 // @match		*://ru.kinorium.com/*
 // @grant		none
